@@ -6,6 +6,7 @@ import java.util.List;
 
 public interface ImageMapper {
 
+
     void upodate(Image3D image3D);
 
     void insert(Image3D image3D);
@@ -15,4 +16,5 @@ public interface ImageMapper {
     List<Image3D> getGroupImage(String userId);
 
     void delGroupImage(String imageId);
+
 }

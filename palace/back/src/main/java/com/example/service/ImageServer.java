@@ -12,9 +12,10 @@ import java.util.List;
 @Service
 public class ImageServer {
 
+
     // 文件上传存储路径
     private static final String filePath = System.getProperty("user.dir") + "\\files\\";
-
+    
     @Resource
     ImageMapper imageMapper;
 

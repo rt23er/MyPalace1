@@ -35,10 +35,12 @@
         where 3d_image.user_id = #{userId}
     </select>
 
+
     <!--    根据id删除-->
     <select id="delGroupImage">
         delete from 3d_image
         where 3d_image.image_id = #{imageId}
     </select>
+
 </mapper>
 

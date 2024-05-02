@@ -100,4 +100,5 @@ public class ImageController {
         List<String> list = imageServer.delGroupImage(UserId);
         return  Result.success(list);
     }
+
 }
