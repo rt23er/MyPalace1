@@ -10,7 +10,7 @@
             </div>
         </div>
 
-        <div class="district-text">
+        <div  class="district-text">
             <div v-for="item in videoList" :key="item.id" style="margin-top:15px">
                 <div class="test_two_box">
                     <div class="title"> {{ item.videoName }}</div>
@@ -22,19 +22,25 @@
                 </div>
             </div>
         </div>
+
+        <button @click="getPath"> 点击</button>
     </div>
 </template>
-<script src="./slider_card.js"></script>
+
+<script src="./slider_card.js">
+
+</script>
+
 <script>
 import {getAll} from "@/api/video";
 import {Swiper} from "@/utils/slider_card";
-
+import axios from "axios";
 export default {
     name: "video1",
     data() {
         return {
             videoList: [],
-            videoHtmlList: '',
+            videoPathList: '',
         }
     },
     mounted() {
@@ -44,6 +50,20 @@ export default {
         })
     },
     methods: {
+       async getPath(){
+            await axios({
+                url:'http://localhost:9091/Video/getAllVideo1',
+                method: 'GET',
+                // responseType: 'stream',
+            }).then(
+
+                res => {
+                    console.log(res.data)
+                    this.videoList = res.data.data;
+                }
+            )
+           console.log()
+        },
         GetVideo() {
             getAll().then(res => {
                 this.videoList = res.data;
@@ -152,7 +172,6 @@ export default {
 <style lang="scss" scoped>
 .district-page {
   text-align: left;
-
   .district-text {
     display: flex;
     flex-wrap: wrap;

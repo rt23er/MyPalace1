@@ -17,7 +17,11 @@
                         <el-menu-item index="/front/video1">视频中心</el-menu-item>
                         <el-menu-item index="/front/aiChat">AI助手</el-menu-item>
                         <el-menu-item index="/front/train" >训练中心</el-menu-item>
-                        <el-menu-item index="/front/webChat" >web聊天室</el-menu-item>
+                        <el-menu-item index="/test" >测试中心</el-menu-item>
+<!--                        <el-menu-item index="/front/webChat" >web聊天室</el-menu-item>-->
+
+<!--                        <el-menu-item index="/front/video" >视频</el-menu-item>-->
+
                     </el-menu>
                 </div>
             </div>

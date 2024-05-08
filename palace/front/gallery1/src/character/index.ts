@@ -197,7 +197,6 @@ export default class Character {
 			}
 		}
 
-
 		this.character.updateMatrixWorld();
 	}
 

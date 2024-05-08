@@ -48,8 +48,8 @@
                     <template v-slot="scope">
                         <el-button size="mini" type="primary" plain @click="handleEdit(scope.row)">编辑</el-button>
                         <el-button size="mini" type="danger" plain @click="del(scope.row.id)">删除</el-button>
-                        <el-radio v-model="radio" label="1">封禁</el-radio>
-                        <el-radio v-model="radio" label="2">解封</el-radio>
+<!--                        <el-radio v-model="radio" label="1">封禁</el-radio>-->
+<!--                        <el-radio v-model="radio" label="2">解封</el-radio>-->
                     </template>
                 </el-table-column>
             </el-table>

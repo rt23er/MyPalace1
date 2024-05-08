@@ -1,13 +1,16 @@
 <template>
 
-  <button @click="getName">
-     点击获取名字
-  </button>
 
+   <div>
+
+       <MySwiper></MySwiper>
+
+   </div>
 
 </template>
 
 <script>
+import MySwiper from "@/Swiper/demo/MySwiper.vue";
 export default {
     name: "test" ,
     methods: {
@@ -15,7 +18,9 @@ export default {
           name =  this.$store.state.activeMenuName ;
           alert(name) ;
         }
-    }
+    },
+    components:{MySwiper}
+
 }
 
 

@@ -3,7 +3,7 @@
 <!--   设计测试训练    -->
 
        <router-view></router-view>
-       <i class="iconfont myI  icon-zhuxiaoguanji" v-if="$route.name==='Train3D' ||$route.name==='TrainNumber'" @click="back"></i>
+       <i class="iconfont myI  icon-zhuxiaoguanji" v-if="$route.name==='TrainUP' ||$route.name==='TrainNumber'" @click="back"></i>
 
    </div>
 </template>
@@ -13,7 +13,7 @@
 export default {
     name: "Training" ,
     mounted() {
-        this.$router.push({ name:'TrainUP' })
+        this.$router.push({ name:'TrainBar' })
     //      获取路由名字
         console.log(this.$route.name)
     },

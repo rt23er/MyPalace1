@@ -1,4 +1,13 @@
 .DS_Store
 node_modules/
 dist/
-npm-debug.log
+npm-debug.log### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+!/src/components/Video/demo1.mp4
+!/src/components/Video/downloads/

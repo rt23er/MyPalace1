@@ -7,12 +7,12 @@
 
       <div class="container">
           <div class="card">
-              <router-link to="/front/train/train3D">训练1</router-link>
+              <router-link to="/front/train/trainUP">3D训练</router-link>
           </div>
 
 
           <div class="card">
-              <router-link to="/front/train/trainNumber">训练2</router-link>
+              <router-link to="/front/train/trainNumber">数字训练</router-link>
 
           </div>
       </div>

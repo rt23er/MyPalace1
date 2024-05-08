@@ -27,7 +27,8 @@
     "vuex": "^3.6.2",
     "wangeditor": "^4.7.15",
     "wujie": "^1.0.22",
-    "wujie-vue2": "^1.0.22"
+    "wujie-vue2": "^1.0.22",
+    "xml2js": "^0.6.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",
