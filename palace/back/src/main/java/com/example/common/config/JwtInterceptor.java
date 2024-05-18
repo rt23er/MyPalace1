@@ -69,7 +69,6 @@ public class JwtInterceptor implements HandlerInterceptor {
                 token = newToken;
             }
         }
-
         // 2. 开始执行认证
         String urlTest = request.getRequestURI();
         if (ObjectUtil.isEmpty(token)) {
